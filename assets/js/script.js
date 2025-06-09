@@ -736,104 +736,33 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     // ------------------------
-    // MARQUEE VIEW-MORE ANIMATION (768px–320px)
+    // MARQUEE VIEW-MORE ANIMATION (768px–320px) — GSAP + ScrollTrigger
     // ------------------------
-    gsap.registerPlugin(ScrollTrigger, SplitText);
+    gsap.registerPlugin(ScrollTrigger);
     const minWidth = 320;
     const maxWidth = 768;
 
     if (window.innerWidth >= minWidth && window.innerWidth <= maxWidth) {
         const marqueeTrack = document.querySelector(".marquee-track");
-        // const marqueeTexts = Array.from(document.querySelectorAll(".marquee-text"));
-        // const visibleCount = 5;
-        // let currentVisible = visibleCount;
 
-        // marqueeTexts.forEach((el, i) => {
-        //     el.style.display = i < visibleCount ? "inline-block" : "none";
-        // });
+        if (marqueeTrack) {
+            const splitText = marqueeTrack.textContent.split(" ").map(word => `<span>${word}</span>`).join(" ");
+            marqueeTrack.innerHTML = splitText;
+            const spans = marqueeTrack.querySelectorAll("span");
 
-        // marqueeTexts.slice(0, visibleCount).forEach(el => animateText(el));
-
-        // if (marqueeTexts.length > visibleCount && marqueeTrack) {
-        //     const btn = document.createElement("button");
-        //     btn.className = "view-more-btn";
-        //     btn.textContent = "Explorer More";
-        //     marqueeTrack.after(btn);
-
-        //     btn.addEventListener("click", () => {
-        //         const nextBatch = marqueeTexts.slice(currentVisible, currentVisible + visibleCount);
-        //         nextBatch.forEach(el => {
-        //             el.style.display = "inline-block";
-        //             animateText(el);
-        //         });
-
-        //         gsap.from(nextBatch, {
-        //             opacity: 0,
-        //             y: "3vw",
-        //             duration: 0.6,
-        //             stagger: 0.1,
-        //             ease: "power2.out"
-        //         });
-
-        //         currentVisible += nextBatch.length;
-        //         if (currentVisible >= marqueeTexts.length) {
-        //             btn.remove();
-        //         }
-
-        //         ScrollTrigger.refresh();
-        //     });
-        // }
-
-        // function animateText(el) {
-        //     const anchor = el.querySelector("a");
-        //     if (anchor && !anchor.classList.contains("split-applied")) {
-        //         anchor.classList.add("split-applied");
-        //         const split = new SplitText(anchor, { type: "chars,words" });
-        //         gsap.from(split.chars, {
-        //             opacity: 0,
-        //             y: "1.5vw",
-        //             duration: 0.8,
-        //             ease: "circ.out",
-        //             stagger: 0.02,
-        //             scrollTrigger: {
-        //                 trigger: anchor,
-        //                 start: "top 80%",
-        //                 end: "bottom 60%",
-        //                 scrub: 1,
-        //             }
-        //         });
-        //     }
-        // }
-        function setupGreathornedSplit() {
-            const splitTimeline = gsap.timeline();
-            const split = new SplitText(".marquee-track span", { type: "chars,words" });
-            const chars = split.chars;
-
-            splitTimeline.from(chars, {
+            gsap.from(spans, {
                 opacity: 0,
                 y: "1.5vw",
                 duration: 0.8,
                 ease: "circ.out",
-                stagger: 0.02,
+                stagger: 0.05,
                 scrollTrigger: {
-                    trigger: ".marquee-track span",
+                    trigger: marqueeTrack,
                     start: "top 80%",
                     end: "bottom 60%",
                     scrub: 1,
                 }
             });
         }
-
-        window.addEventListener("load", () => {
-            setupGreathornedSplit();
-        });
-
-        // ScrollTrigger.addEventListener("refresh", setupGreathornedSplit);
     }
-
-    // ------------------------
-    // REMAINING OLD CODE BLOCK
-    // ------------------------
-    // KEEP YOUR FULL EXISTING CODE HERE (Navigation, Scroll Effects, Split Text, CTA, etc.)
-    // You don't need to change that block—just make sure it's still inside this DOMContentLoaded event.
 });
