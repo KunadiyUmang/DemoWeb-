@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Syama NEW</title>
+
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/menubar.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body id="luxy">
+  <div class="page-wrapper">
+
+    <?php include_once 'header.php'; ?>
+
+    <div class="main-wrapper">
+      <!-- HERO section -->
+      <div class="section hero">
+        <div class="video-container">
+          <video autoplay muted loop playsinline class="bg-video">
+            <source src="assets/videos/hero-bg-video.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+          <div class="video-overlay"></div>
+        </div>
+
+        <div class="hero-content">
+          <h1 class="display1 medium">The Real Blue</h1>
+          <p class="regular">
+            From our looms in India to collections across the globe—fabric that travels with pride.
+          </p>
+          <button class="hero-btn regular lh-23 text-sm">Explore Collections</button>
+
+          <div class="hero-bottom" id="heroBottom">
+            <div class="hero-bottom-item">
+              <p>Position We Hold</p>
+              <p>Among Top 2 Denim Mills in Asia</p>
+            </div>
+            <div class="hero-bottom-line">
+              <img src="assets/images/hero-bottom-line.svg" alt="Hero Bottom Line" class="hero-bottom-line-image" />
+            </div>
+
+            <div class="hero-bottom-item">
+              <p>Our Daily Grind</p>
+              <p>72 Million Meters Annual Fabric Output</p>
+            </div>
+            <div class="hero-bottom-line">
+              <img src="assets/images/hero-bottom-line.svg" alt="Hero Bottom Line" class="hero-bottom-line-image" />
+            </div>
+
+            <div class="hero-bottom-item">
+              <p>Crafted by People</p>
+              <p>3000+ Trained Textile Hands</p>
+            </div>
+            <div class="hero-bottom-line">
+              <img src="assets/images/hero-bottom-line.svg" alt="Hero Bottom Line" class="hero-bottom-line-image" />
+            </div>
+
+            <div class="hero-bottom-item">
+              <p>Global Recognition</p>
+              <p>Winner of National Export Award</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!--Denims section -->
+
+      <div class="section hero denims-section">
+        <div class="denims-content clusterGreat">
+          <div class="denims-description">
+            <img src="assets/images/at-syama-bgdot.svg" class="denims-dot dotsBlue" alt="Img Dot">
+
+            <div class="denims-image-container-small circle">
+              <img src="assets/images/at-syama-img2.png" alt="denims Image" class="denims-image">
+            </div>
+
+            <div class="denims-image-container-large owlHorned">
+              <h2 class="heading3  regular  lh-57  titleGreathorned">
+                At Syama Denims, we weave heritage, innovation, and sustainability into every inch of fabric.
+              </h2>
+
+              <div class="denims-image-right">
+                <img src="assets/images/at-syama-img1.png" alt="denims Image" class="denims-image">
+              </div>
+            </div>
+          </div>
+
+          <div class="denims-image-right">
+            <img src="assets/images/at-syama-bg.svg" alt="Large Denims Image" class="denims-image denims-bg">
+          </div>
+        </div>
+
+      </div>
+      <!-- Seasonal section -->
+
+      <!-- <div class="section seasonal-collection">
+        <div class="collection-container">
+          <div class="marquee-container">
+            <div class="seasons-header marquee" id="marquee">
+
+              <div class="season-item heading3  regular lh-46 " data-img="assets/images/seasonal-img1.png">SS 26</div>
+              <img src="assets/images/mark-line.png" alt="Seasonal collection featured image" class="mark-line" />
+              <div class="season-item heading3  regular lh-46" data-img="assets/images/at-syama-img1.png">Autumn/Winter
+                25
+              </div>
+              <img src="assets/images/mark-line.png" alt="Seasonal collection featured image" class="mark-line" />
+
+              <div class="season-item heading3  regular lh-46" data-img="assets/images/seasonal-img1.png">Spring Summer
+                25
+              </div>
+              <img src="assets/images/mark-line.png" alt="Seasonal collection featured image" class="mark-line" />
+
+              <div class="season-item heading3  regular lh-46" data-img="assets/images/at-syama-img1.png">Fall Winter 24
+              </div>
+              <img src="assets/images/mark-line.png" alt="Seasonal collection featured image" class="mark-line" />
+
+              <div class="season-item heading3  regular lh-46" data-img="assets/images/seasonal-img1.png">Spring/Summer
+                2024
+              </div>
+              <img src="assets/images/mark-line.png" alt="Seasonal collection featured image" class="mark-line" />
+
+              <div class="season-item heading3  regular lh-46" data-img="assets/images/seasonal-img1.png">SS 26</div>
+              <img src="assets/images/mark-line.png" alt="Seasonal collection featured image" class="mark-line" />
+
+              <div class="season-item heading3  regular lh-46" data-img="assets/images/at-syama-img1.png">Autumn/Winter
+                25
+              </div>
+              <img src="assets/images/mark-line.png" alt="Seasonal collection featured image" class="mark-line" />
+
+              <div class="season-item heading3  regular lh-46" data-img="assets/images/seasonal-img1.png">Spring Summer
+                25
+              </div>
+              <img src="assets/images/mark-line.png" alt="Seasonal collection featured image" class="mark-line" />
+
+              <div class="season-item heading3  regular lh-46" data-img="assets/images/at-syama-img1.png">Fall Winter 24
+              </div>
+              <img src="assets/images/mark-line.png" alt="Seasonal collection featured image" class="mark-line" />
+
+              <div class="season-item heading3  regular lh-46" data-img="assets/images/seasonal-img1.png">Spring/Summer
+                2024
+              </div>
+              <img src="assets/images/mark-line.png" alt="Seasonal collection featured image" class="mark-line" />
+
+              <div class="season-item heading3  regular lh-46" data-img="assets/images/seasonal-img1.png">SS 26</div>
+              <img src="assets/images/mark-line.png" alt="Seasonal collection featured image" class="mark-line" />
+              <div class="season-item heading3  regular lh-46" data-img="assets/images/at-syama-img1.png">Autumn/Winter
+                25
+              </div>
+              <img src="assets/images/mark-line.png" alt="Seasonal collection featured image" class="mark-line" />
+
+              <div class="season-item heading3  regular lh-46" data-img="assets/images/seasonal-img1.png">Spring Summer
+                25
+              </div>
+              <img src="assets/images/mark-line.png" alt="Seasonal collection featured image" class="mark-line" />
+
+              <div class="season-item heading3  regular lh-46" data-img="assets/images/at-syama-img1.png">Fall Winter 24
+              </div>
+              <img src="assets/images/mark-line.png" alt="Seasonal collection featured image" class="mark-line" />
+
+              <div class="season-item heading3  regular lh-46" data-img="assets/images/seasonal-img1.png">Spring/Summer
+                2024
+              </div>
+              <img src="assets/images/mark-line.png" alt="Seasonal collection featured image" class="mark-line" />
+
+            </div>
+          </div>
+
+          <div class="image-section">
+            <div class="image-wrapper">
+              <img src="assets/images/seasonal-img1.png" alt="Seasonal collection featured image"
+                class="collection-image " id="season-image" />
+              <div class="button-container">
+                <button class="seasonal-btn lh-23 text-sm">Explore Collections</button>
+              </div>
+            </div>
+
+            <div class="background-decor">
+              <img src="assets/images/seasonal-mark-bg.svg" alt="Decorative background" class="bg-mark"
+                id="season-image2" />
+            </div>
+          </div>
+        </div>
+      </div> -->
+
+
+
+
+
+      <section class="marquee-section">
+        <div class="featured-header">
+          <h2 class="heading3  regular lh-46">Fashion Carousel</h2>
+          <p class=" dark-op-text regular text-md lh-23 ">Denim Revival – Sky Blue Confidence. Explore seasonal collections visually.</p>
+        </div>
+        <div class="marquee-track">
+          <span class="marquee-text heading3  regular lh-46 " data-img="assets/images/at-syama-img1.png"><a>SS
+              26</a></span>
+          <img src="assets/images/mark-line.png" alt="Seasonal collection featured image" class="mark-line" />
+
+          <span class="marquee-text heading3  regular lh-46" data-img="assets/images/seasonal-img1.png"><a>Autumn/Winter
+              25</a></span>
+          <img src="assets/images/mark-line.png" alt="Seasonal collection featured image" class="mark-line" />
+
+          <span class="marquee-text heading3  regular lh-46" data-img="assets/images/at-syama-img1.png"><a>Spring Summer
+              25</a></span>
+          <img src="assets/images/mark-line.png" alt="Seasonal collection featured image" class="mark-line" />
+
+          <span class="marquee-text heading3  regular lh-46" data-img="assets/images/seasonal-img1.png"><a>Fall Winter
+              24</a></span>
+          <img src="assets/images/mark-line.png" alt="Seasonal collection featured image" class="mark-line" />
+
+          <span class="marquee-text heading3  regular lh-46" data-img="assets/images/at-syama-img1.png"><a>Spring/Summer
+              2024</a></span>
+          <img src="assets/images/mark-line.png" alt="Seasonal collection featured image" class="mark-line" />
+          <span class="marquee-text heading3  regular lh-46 " data-img="assets/images/at-syama-img1.png"><a>SS
+              26</a></span>
+          <img src="assets/images/mark-line.png" alt="Seasonal collection featured image" class="mark-line" />
+
+          <span class="marquee-text heading3  regular lh-46" data-img="assets/images/seasonal-img1.png"><a>Autumn/Winter
+              25</a></span>
+          <img src="assets/images/mark-line.png" alt="Seasonal collection featured image" class="mark-line" />
+
+          <span class="marquee-text heading3  regular lh-46" data-img="assets/images/at-syama-img1.png"><a>Spring Summer
+              25</a></span>
+          <img src="assets/images/mark-line.png" alt="Seasonal collection featured image" class="mark-line" />
+
+          <span class="marquee-text heading3  regular lh-46" data-img="assets/images/seasonal-img1.png"><a>Fall Winter
+              24</a></span>
+          <img src="assets/images/mark-line.png" alt="Seasonal collection featured image" class="mark-line" />
+
+          <span class="marquee-text heading3  regular lh-46" data-img="assets/images/at-syama-img1.png"><a>Spring/Summer
+              2024</a></span>
+          <img src="assets/images/mark-line.png" alt="Seasonal collection featured image" class="mark-line" />
+        </div>
+        <button class="featured-btn lets-btn hero-btn lh-23 text-sm">Explorer More</button>
+
+      </section>
+
+
+      <div class="custom-cursor"></div>
+
+
+
+      <!-- Featured section -->
+      <div class="section featured-section">
+        <div class="featured-content">
+
+          <div class="featured-header">
+            <h2 class="heading3  regular lh-46">Featured Collections</h2>
+            <p class=" dark-op-text regular text-md lh-23 ">Discover timeless and modern fabric ranges built for every
+              silhouette.</p>
+          </div>
+
+          <div class="featured-grid">
+            <div class="featured-image-container">
+              <div> <img src="assets/images/featured1.png" alt="Featured Collection 2">
+                <div class="featurd-img-overlay"></div>
+              </div>
+
+              <div class="featured-caption">
+                <h3 class="heading4 semibold lh-37">Raw Denim</h3>
+                <button class="featured-btn hero-btn lh-23 text-sm">Explore Collections</button>
+
+              </div>
+            </div>
+
+            <div class="featured-image-container">
+               <div> <img src="assets/images/featured2.png" alt="Featured Collection 2">
+                <div class="featurd-img-overlay"></div>
+              </div>
+              
+              <div class="featured-caption">
+                <h3 class="heading4 semibold lh-37">Sustainable Indigo</h3>
+                <button class="featured-btn hero-btn lh-23 text-sm">Explore Collections</button>
+
+              </div>
+            </div>
+
+            <div class="featured-image-container">
+              <div> <img src="assets/images/featured3.png" alt="Featured Collection 2">
+                <div class="featurd-img-overlay"></div>
+              </div>
+              <div class="featured-caption">
+                <h3 class="heading4 semibold lh-37">Coated Denim</h3>
+                <button class="featured-btn hero-btn lh-23 text-sm">Explore Collections</button>
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- featured section -->
+      <div class="section">
+        <div class="container">
+          <div class="lets-conneact">
+            <div class="lets-heder">
+              <h2 class="heading3  regular lh-46">Let's Weave Something Together</h2>
+              <p class="dark-op-text text-md regular lh-23 ">From timeless fabric development to custom sourcing —
+                connect with our team to build your next denim
+                collection.</p>
+            </div>
+            <div class="lets-bottom">
+              <button class="featured-btn lets-btn hero-btn lh-23 text-sm">Let’s Start a Conversation</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sustainability section -->
+      <div class="section sustainability-section">
+        <div class="container sustainability-container">
+          <div class="sustainability-content-wrapper">
+            <div class="sustainability-text-block">
+              <h2 class="heading3  regular lh-46">Sustainability Highlight</h2>
+              <div class="sustainability-features">
+
+                <div class="feature-item">
+                  <div class="icon-wrapper">
+                    <img src="assets/images/sustainability-icon1.svg" alt="Zero Liquid Discharge"
+                      class="sustainability-icon" />
+                  </div>
+                  <p class="feature-label">Zero Liquid Discharge</p>
+                </div>
+                <div class="hero-bottom-line">
+                  <img src="assets/images/sustainability-line.svg" alt="Hero Bottom Line"
+                    class="hero-bottom-line-image">
+                </div>
+                <div class="feature-item">
+                  <div class="icon-wrapper">
+                    <img src="assets/images/sustainability-icon2.svg" alt="Caustic Recovery"
+                      class="sustainability-icon" />
+                  </div>
+                  <p class="feature-label">Caustic Recovery</p>
+                </div>
+                <div class="hero-bottom-line">
+                  <img src="assets/images/sustainability-line.svg" alt="Hero Bottom Line"
+                    class="hero-bottom-line-image">
+                </div>
+                <div class="feature-item">
+                  <div class="icon-wrapper">
+                    <img src="assets/images/sustainability-icon3.svg" alt="Caustic Recovery"
+                      class="sustainability-icon" />
+                  </div>
+                  <p class="feature-label">ZDHC Certified Dyes</p>
+                </div>
+                
+
+              </div>
+            </div>
+            <div class="sustainability-visual">
+              <div class="sustainability-bg-wrapper">
+                <img src="assets/images/sustainability-bg.svg" alt="Sustainability Background" />
+              </div>
+              <div class="sustainability-video-wrapper">
+                <div class="sustainability-video-container">
+                  <video autoplay muted loop playsinline class="sustainability-video">
+                    <source src="assets/videos/sustainability-video.mp4" type="video/mp4" />
+                    Your browser does not support the video tag.
+                  </video>
+                  <img src="assets/images/video-top-bg.svg" alt="Video Overlay" class="sustainability-video-overlay" />
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Section -->
+      <div class="section craftsmanship-section">
+        <div class="craftsmanship-content">
+          <div class="featured-header">
+            <h2 class="heading3  regular lh-46">Craftsmanship</h2>
+            <p class="dark-op-text text-md regular lh-23">
+              The unseen hands and heritage behind every roll of Syama denim.
+            </p>
+          </div>
+
+          <div class="craftsmanship-slider-container">
+            <div class="swiper craftsmanship-slider">
+              <div class="swiper-wrapper craftsmanship-slider-wrapper">
+
+                <div class="swiper-slide craftsmanship-slider-content">
+                  <div class="craftsmanship-slider-img">
+                    <img src="assets/images/craft-slider-img1.png" alt="Slasher Dyeing" />
+                  </div>
+                  <div class="craftsmanship-slider-text">
+                    <h2 class="heading5 regular lh-46">Slasher Dyeing</h2>
+                    <p class="dark-op-text text-md regular lh-23">
+                      The unseen hands and heritage behind every roll of Syama denim.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="swiper-slide craftsmanship-slider-content">
+                  <div class="craftsmanship-slider-img">
+                    <img src="assets/images/craft-slider-img2.png" alt="Mercerizing" />
+                  </div>
+                  <div class="craftsmanship-slider-text">
+                    <h2 class="heading5 regular lh-46">Mercerizing</h2>
+                    <p class="dark-op-text text-md regular lh-23">
+                      Adds strength and sheen through controlled caustic treatment.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="swiper-slide craftsmanship-slider-content">
+                  <div class="craftsmanship-slider-img">
+                    <img src="assets/images/craft-slider-img3.png" alt="Finishing Range" />
+                  </div>
+                  <div class="craftsmanship-slider-text">
+                    <h2 class="heading5 regular lh-46">Finishing Range</h2>
+                    <p class="dark-op-text text-md regular lh-23">
+                      Shrink control and softness perfected before dispatch.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="swiper-slide craftsmanship-slider-content">
+                  <div class="craftsmanship-slider-img">
+                    <img src="assets/images/craft-slider-img4.png" alt="Selvedge Edge" />
+                  </div>
+                  <div class="craftsmanship-slider-text">
+                    <h2 class="heading5 regular lh-46">Selvedge Edge</h2>
+                    <p class="dark-op-text text-md regular lh-23">
+                      Precision-woven edge for strength, structure, and style.
+                    </p>
+                  </div>
+                </div>
+<div class="swiper-slide craftsmanship-slider-content">
+                  <div class="craftsmanship-slider-img">
+                    <img src="assets/images/craft-slider-img1.png" alt="Slasher Dyeing" />
+                  </div>
+                  <div class="craftsmanship-slider-text">
+                    <h2 class="heading5 regular lh-46">Slasher Dyeing</h2>
+                    <p class="dark-op-text text-md regular lh-23">
+                      The unseen hands and heritage behind every roll of Syama denim.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="swiper-slide craftsmanship-slider-content">
+                  <div class="craftsmanship-slider-img">
+                    <img src="assets/images/craft-slider-img2.png" alt="Mercerizing" />
+                  </div>
+                  <div class="craftsmanship-slider-text">
+                    <h2 class="heading5 regular lh-46">Mercerizing</h2>
+                    <p class="dark-op-text text-md regular lh-23">
+                      Adds strength and sheen through controlled caustic treatment.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- cta Section -->
+      <div class="section cta-section">
+        <div class="cta-section-video">
+          <div class="cta-video-overlay-one"></div>
+          <video autoplay muted loop playsinline class="bg-video">
+            <source src="assets/videos/cta-video.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+          <div class="cta-video-overlay"></div>
+        </div>
+
+        <div class="cta-content">
+          <h1 class="heading3  medium ">Let's Weave Something Together</h1>
+          <p class="text-md regular lh-23">
+            From timeless fabric development to custom sourcing — connect with our team to build your next denim
+            collection.
+          </p>
+          <button class="hero-btn lh-23 text-sm">Explore Collections</button>
+        </div>
+      </div>
+
+    </div>
+    <?php include_once 'footer.php'; ?>
+  </div>
+
+  <script src="assets/js/script.js" type="text/javascript"></script>
+
+
+  <script src="https://unpkg.com/gsap@3/dist/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/SplitText.min.js"></script>
+  <script src="https://assets.codepen.io/16327/SplitText3.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script
+    src="https://uploads-ssl.webflow.com/6330c0ebacf06abbc83b6eb3/64103732523ba652052e0223_lenis-bundled.txt"></script>
+
+
+
+</body>
+
+</html>

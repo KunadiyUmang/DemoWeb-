@@ -1,0 +1,124 @@
+header {
+    position: relative;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+    position: absolute;
+    width: -webkit-fill-available;
+    height: 5.625vw;
+    /* 108px → (108/1920)*100 = 5.625vw */
+    right: 2.031vw;
+    /* 39px → 2.031vw */
+    left: 2.031vw;
+    /* 39px → 2.031vw */
+    top: 1.823vw;
+    /* 35px → 1.823vw */
+    padding-bottom: 1.25vw;
+    /* 24px → 1.25vw */
+    border-bottom: solid 0.052vw #ffffff1a;
+    /* 1px → 0.052vw */
+}
+
+.nav-left {
+    /* font-weight: 600; */
+    color: var(--white);
+    user-select: none;
+}
+
+.nav-logo {
+    position: absolute;
+    left: 50vw;
+    transform: translateX(-5vw);
+    user-select: none;
+}
+
+.nav-logo img {
+    height: 5vw;
+    /* 83.79px → ~8.4vh */
+}
+
+.nav-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    width: 1.563vw;
+    /* 30px → (30/1920)*100 = 1.563vw */
+    height: 0.781vw;
+    /* 15px → (15/1920)*100 = 0.781vw */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 1001;
+}
+
+.nav-toggle span {
+    display: block;
+    height: 0.156vw;
+    /* 3px → 3/1920*100 = 0.156vw */
+    background: white;
+    border-radius: 0.104vw;
+    /* 2px → 0.104vw */
+    transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+.nav-toggle.active span:nth-child(1) {
+    transform: rotate(45deg) translate(0.156vw, 0.26vw);
+    /* 3px, 5px */
+}
+
+.nav-toggle.active span:nth-child(2) {
+    transform: rotate(-45deg) translate(0.26vw, -0.26vw);
+    /* 5px, -5px */
+}
+
+.nav-list {
+    position: absolute;
+    top: 7.4vw;
+    /* keeping vh as is */
+    right: 0.694vw;
+    /* keeping vh as is */
+    width: 0;
+    background-color: hsla(0, 0%, 100%, 0);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    padding: 1.667vw 0;
+    /* 1rem → 16px → 0.833vw */
+    padding: 0.833vw 0;
+    z-index: 999;
+    will-change: width;
+    transition: width 0.3s ease, background-color 0.3s ease;
+}
+
+.nav-list.blur-active {
+    backdrop-filter: blur(0.694vw);
+    /* already in vw, no change */
+    background-color: hsla(0, 0%, 100%, 0);
+}
+
+.nav-list a {
+    color: var(--white);
+    text-decoration: none;
+    padding: 1.667vw 2vw;
+    /* 16px and 32px → 0.833vw and 1.667vw */
+    /* padding: 0.833vw 1.667vw; */
+    /* font-size: 1.2rem; */
+    /* 1.2rem → 19.2px → 1vw (approx) */
+    /* You can uncomment and convert if needed: font-size: 1vw; */
+    border-bottom: 0.052vw solid hsla(0, 0%, 100%, 0);
+    /* 1px → 0.052vw */
+    opacity: 0;
+    transform: translateX(2.604vw);
+    /* 50px → (50/1920)*100 = 2.604vw */
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.nav-list a:hover {
+    background: #FECC00;
+    color: var(--black);
+}
